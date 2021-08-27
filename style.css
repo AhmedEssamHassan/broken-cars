@@ -1,5 +1,6 @@
 body {
   background-color: #fcfeff;
+  font-family: ;
 }
 /* navbar */
 nav {
@@ -116,92 +117,107 @@ nav {
   background-color: #53af50;
 }
 
-/* counter */
-.counters-container {
-  display: grid;
-  height: 250px;
-  margin-top: 50px;
-  text-align: center;
-  place-items: center;
+/* instructions */
+.instructions {
+  margin: 55px 0px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.circle-wrapper {
-  height: 250px;
-  position: relative;
+.instructions p {
+  color: #a0a0a0;
+  font-size: 20px;
+  text-align: center;
 }
 
-.circle-wrapper h2 {
-  color: red;
-  z-index: 999;
-  position: absolute;
-  top: 100%;
+.instructions h3 {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.circular {
-  height: 100px;
-  width: 100px;
-  position: relative;
-  transform: scale(2);
+.instructions i {
+  color: #3a7d33d0;
 }
-.circular .inner {
-  position: absolute;
-  z-index: 6;
-  top: 50%;
-  left: 50%;
-  height: 80px;
-  width: 80px;
-  margin: -40px 0 0 -40px;
-  background: #dde6f0;
-  border-radius: 100%;
+
+/* about us */
+.aboutus {
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.circular .number {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  font-size: 18px;
-  font-weight: 500;
-  color: #4158d0;
+
+.aboutus h3 {
+  margin-bottom: 50px;
 }
-.circular .bar {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #9e9e9e;
-  -webkit-border-radius: 100%;
-  clip: rect(0px, 100px, 100px, 50px);
+
+.aboutus p {
+  color: #a0a0a0;
+  font-size: 25px;
+  padding: 0px 100px;
 }
-.circle .bar .progress {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  -webkit-border-radius: 100%;
-  clip: rect(0px, 50px, 100px, 0px);
-  background: #4158d0;
-}
-.circle .left .progress {
-  z-index: 1;
-  animation: left 4s linear both;
-}
-@keyframes left {
-  100% {
-    transform: rotate(180deg);
+
+@media only screen and (max-width: 600px) {
+  .aboutus p {
+    font-size: 15px;
+    text-align: justify;
+    direction: rtl;
   }
 }
-.circle .right {
-  transform: rotate(180deg);
-  z-index: 3;
+
+/* footer */
+
+footer {
+  border-top: 2px solid #a0a0a0;
 }
-.circle .right .progress {
-  animation: right 4s linear both;
-  animation-delay: 4s;
+
+footer .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
 }
-@keyframes right {
-  100% {
-    transform: rotate(180deg);
+
+footer .header div {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left img {
+  width: 100px;
+  height: 70px;
+}
+
+footer .right {
+  text-align: right;
+}
+
+.right .ain {
+  width: 100%;
+  font-family: "Vibes", cursive;
+  font-size: 55px;
+}
+
+@media only screen and (max-width: 530px) {
+  .right .ain {
+    font-size: 30px;
+  }
+  .mid {
+    font-size: 10px;
+    text-align: center;
   }
 }
