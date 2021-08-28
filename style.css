@@ -35,7 +35,6 @@ nav {
 
 @media only screen and (max-width: 945px) {
   .nav-items-container {
-    background-color: red;
     position: absolute;
     top: -500px;
     display: none;
@@ -287,13 +286,13 @@ footer .right {
 
 /* sidebar */
 aside {
-  position: absolute;
+  overflow-y: scroll;
+  position: fixed;
   top: 0;
   left: 0;
   width: 250px;
   height: 100%;
   z-index: 1000;
-  border: 1px solid red;
   background-color: white;
   transition: 1s ease-in-out;
   transform: translateX(-100%);
@@ -338,6 +337,7 @@ aside ul li {
   justify-content: flex-end;
   align-items: center;
   padding: 0px 10px;
+  margin: 5px 0px;
 }
 
 aside ul li p {
