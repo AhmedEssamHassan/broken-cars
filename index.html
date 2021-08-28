@@ -32,6 +32,9 @@
   <body>
     <!-- navbar -->
     <nav class="d-flex justify-content-between align-items-center">
+      <div class="menuBtn" onclick="openSidebar()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
       <section
         class="
           nav-items-container
@@ -40,7 +43,7 @@
           align-items-center
         "
       >
-        <ul class="nav-list d-flex justify-content-between align-items-center">
+        <ul class="nav-list d-flex justify-content-start align-items-center">
           <li
             class="list-item signin"
             style="
@@ -65,9 +68,7 @@
       >
         <img src="./assets/amana.jpeg" alt="" />
         <img src="./assets/alsaif.jpeg" alt="" />
-        <p style="font-family: Vibes, cursive; font-size: 30px" class="ain m-0">
-          <span style="color: #3a7d33">عين</span> العرب
-        </p>
+        <p class="ain-nav m-0"><span style="color: #3a7d33">عين</span> العرب</p>
         <img src="assets/2030vision.jpeg" alt="" />
       </section>
     </nav>
@@ -219,6 +220,64 @@
         <div>جميع الحقوق محفوظة &copy; 2021</div>
       </div>
     </footer>
+
+    <!-- sidebar -->
+    <aside id="aside">
+      <div class="login">
+        <h4>تسجيل الدخول</h4>
+        <i class="fa fa-sign-in" aria-hidden="true"></i>
+      </div>
+      <ul>
+        <li>
+          <p>الرئيسية</p>
+          <i style="font-size: 25px" class="fa fa-home" aria-hidden="true"></i>
+        </li>
+        <li>
+          <p>استعلام</p>
+          <i
+            style="font-size: 25px"
+            class="fa fa-search"
+            aria-hidden="true"
+          ></i>
+        </li>
+        <li>
+          <p>عن المنصة</p>
+          <i
+            style="font-size: 25px"
+            class="fa fa-info-circle"
+            aria-hidden="true"
+          ></i>
+        </li>
+        <li>
+          <p>اهدافنا</p>
+          <i
+            style="font-size: 25px"
+            class="fa fa-area-chart"
+            aria-hidden="true"
+          ></i>
+        </li>
+        <li>
+          <p>من نحن</p>
+          <i style="font-size: 25px" class="fa fa-home" aria-hidden="true"></i>
+        </li>
+        <li>
+          <p>فريق العمل</p>
+          <i style="font-size: 25px" class="fa fa-users" aria-hidden="true"></i>
+        </li>
+        <li>
+          <p>تواصل معنا</p>
+          <i
+            style="font-size: 45px"
+            class="fa fa-mobile"
+            aria-hidden="true"
+          ></i>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- backdrob -->
+
+    <div id="backdrob" onclick="closeSidebar()">ss</div>
 
     <!-- ***************************************************************** -->
     <!-- jquery -->

@@ -1,10 +1,11 @@
-const numb = document.querySelector(".number");
-let counter = 0;
-setInterval(() => {
-  if (counter == 100) {
-    clearInterval();
-  } else {
-    counter += 1;
-    numb.textContent = counter + "%";
-  }
-}, 80);
+const element = document.getElementById("aside");
+const backdrob = document.getElementById("backdrob");
+const openSidebar = () => {
+  backdrob.classList.add("backdrobOpen");
+  element.classList.add("openAside");
+};
+
+const closeSidebar = () => {
+  backdrob.classList.remove("backdrobOpen");
+  element.classList.remove("openAside");
+};
