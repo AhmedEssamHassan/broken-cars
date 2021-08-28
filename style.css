@@ -68,14 +68,34 @@ nav {
 
 /* nav images */
 .nav-photos {
-  width: 35%;
+  width: 25%;
   height: 100%;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 945px) {
   .nav-photos {
-    width: 70%;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 673px) {
+  .nav-photos {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 602px) {
+  .nav-photos {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 502px) {
+  .nav-photos {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .nav-photos {
+    width: 75%;
   }
 }
 
@@ -124,7 +144,7 @@ nav {
 /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
 @keyframes tickerh {
   0% {
-    transform: translateX(-270%);
+    transform: translateX(-250%);
   }
   100% {
     transform: translateX(100%);
